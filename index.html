@@ -49,8 +49,15 @@
   <button id="clearButton" onclick="clearImage()">Clear Image</button>
   <p>  </p>
 
- <img src="./firstgenbronco1.jpg" alt="first gen" width="110" height="90" onclick="loadExampleImage('./firstgenbronco1.jpg')">
- <img src="./internationalscout1.jpg" alt="international" width="110" height="90" onclick="loadExampleImage('./internationalscout1.jpg')">
+   <img src="./firstgenbronco1.jpg" alt="first gen" width="110" height="90" onclick= "loadExampleImage('./firstgenbronco1.jpg')">
+  <img src="./internationalscout1.jpg" alt="international" width="110" height="90" onclick= "loadExampleImage('./internationalscout1.jpg')">
+  <img src="./secondgenbronco1.jpg" alt="international" width="110" height="90" onclick= "loadExampleImage('./internationalscout1.jpg')">
+  <img src="./fifthgenbronco.jpg" alt="international" width="110" height="90" onclick= "loadExampleImage('./internationalscout1.jpg')">
+  <img src="./sixthgenbronco2.jpg" alt="international" width="110" height="90" onclick= "loadExampleImage('./internationalscout1.jpg')">
+
+</body>
+
+
 
 <script>
   var photo = document.getElementById('photo');
@@ -59,19 +66,8 @@
 
 
  // This function should load the example image when it is clicked
-  // okay this takes a new image, the `FileReader`, reads the image file as
-  // Data URL and the `loaded` function is called with the Data URL as its `result`
-  // property
   function loadExampleImage(imagePath) {
-    var img = new Image(); 
-    img.onload = function() {
-      var reader = new FileReader();
-      reader.onload = function(e) {
-        loaded.call({result: e.target.result});
-      }
-      reader.readAsDataURL(this);
-    }
-    img.src = imagePath;
+  // NOT SURE WHAT TO PUT HERE. 
   }
 
 // Read the new photo file
